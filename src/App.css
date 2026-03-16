@@ -1,0 +1,81 @@
+/* Desktop layout */
+.desktop-hand-image {
+  display: none;
+}
+
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background);
+  text-align: center;
+}
+
+.loading-gif {
+  width: 250px;
+  height: auto;
+}
+
+/* Mobile layout */
+@media (max-width: 991px) {
+  .main {
+    padding-top: 80px; /* Account for fixed navbar */
+    min-height: calc(100vh - 80px);
+  }
+  
+  .desktop-hand-image {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .desktop-hand-image {
+    display: block;
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-top: 2rem;
+    transition: transform 0.15s ease-out;
+    will-change: transform;
+  }
+
+  .desktop-logo {
+    display: block;
+    position: absolute;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer p {
+  font-size: 0.5rem;;
+}
+
+.footer-link {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+  color: var(--accent);
+}

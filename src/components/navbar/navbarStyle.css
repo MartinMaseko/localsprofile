@@ -1,0 +1,218 @@
+/* ── Navbar base ── */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background: transparent;
+    box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.3),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    height: 80px;
+}
+
+/* ── Logo ── */
+.navbar-logo {
+    width: auto;
+    height: 40px;
+    padding: 1rem 0rem;
+}
+
+/* =============================
+   DESKTOP (≥992px)
+   ============================= */
+.navbar-mobile {
+    display: none;
+}
+
+.navbar-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.navbar-links-left {
+    justify-content: flex-end;
+}
+
+.navbar-links-right {
+    justify-content: flex-start;
+}
+
+.navbar-link {
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 0.75rem 1.25rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease;
+    background: var(--glass-bg);
+    border: 1px solid var(--accent-border);
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.navbar-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--accent);
+    border-radius: 12px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+    z-index: -1;
+}
+
+.navbar-link:hover {
+    color: #191919;
+}
+
+.navbar-link:hover::before {
+    transform: scaleX(1);
+}
+
+/* Hide dropdown on desktop */
+.navbar-dropdown {
+    display: none;
+}
+
+/* =============================
+   MOBILE (<992px)
+   ============================= */
+@media (max-width: 991px) {
+    .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-mobile {
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem 0.5rem;
+        height: 100%;
+    }
+
+    /* Toggle button */
+    .navbar-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-toggle-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Dropdown menu for mobile */
+    .navbar-dropdown {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(34, 34, 34, 1);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 250;
+        border-radius: 0 0 12px 12px;
+        max-height: 100vh;
+        overflow-y: auto;
+        pointer-events: none;
+    }
+
+    .navbar-dropdown.open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .navbar-dropdown-link {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 2rem 1.5rem;
+        color: var(--text);
+        text-decoration: none;
+        border: none;
+        background: transparent;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        font-family: inherit;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .navbar-dropdown-link:last-child {
+        border-bottom: none;
+    }
+
+    .navbar-dropdown-link::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--accent);
+        transform: scaleY(0);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-dropdown-link:hover,
+    .navbar-dropdown-link.active {
+        background: rgba(255, 184, 3, 0.1);
+        color: var(--accent);
+        padding-left: 2rem;
+    }
+
+    .navbar-dropdown-link:hover::before,
+    .navbar-dropdown-link.active::before {
+        transform: scaleY(1);
+    }
+
+    .navbar-dropdown-link.active {
+        font-weight: 700;
+        background: rgba(255, 184, 3, 0.15);
+    }
+
+    /* Add smooth animations when closing dropdown */
+    .navbar-dropdown.open ~ .main {
+        transform: translateY(0);
+        transition: transform 0.3s ease;
+    }
+}

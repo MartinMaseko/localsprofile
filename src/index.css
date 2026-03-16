@@ -1,0 +1,74 @@
+:root {
+  /* Glassmorphism color scheme */
+  --bg-start: #343A42;
+  --bg-end: #000000;
+  --glass-bg-dark: rgba(0, 0, 0, 0.7);
+  --glass-bg: rgba(52, 58, 66, 0.2);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: rgba(0, 0, 0, 0.25);
+  
+  --text: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-h: #ffffff;
+  --border: rgba(255, 184, 3, 0.4);
+  --code-bg: rgba(255, 255, 255, 0.05);
+  
+  /* Accent colors with transparency */
+  --accent: #FFB803;
+  --accent-bg: rgba(255, 184, 3, 0.15);
+  --accent-border: rgba(255, 184, 3, 0.3);
+  --social-bg: rgba(255, 255, 255, 0.05);
+  
+  /* Enhanced shadows for depth */
+  --shadow:
+    rgba(0, 0, 0, 0.4) 0 8px 32px 0,
+    rgba(255, 255, 255, 0.05) 0 1px 0 inset;
+  --glass-shadow-intense:
+    rgba(0, 0, 0, 0.5) 0 15px 35px,
+    rgba(255, 255, 255, 0.1) 0 1px 0 inset;
+
+  --sans: 'Montserrat', 'Roboto', 'Ubuntu', system-ui, sans-serif;
+  --heading: 'Michroma', 'Montserrat', system-ui, sans-serif;
+  --mono: 'Datatype', ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color: var(--text);
+  background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%);
+  background-attachment: fixed;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.02);
+  font-family: var(--sans);
+}
+
+.main {
+  min-height: 100vh;
+}
+
