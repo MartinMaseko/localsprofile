@@ -30,7 +30,7 @@ export const menuContent: Record<string, MenuSection> = {
       },
       {
         type: 'image',
-        content: '/src/assets/images/whatwedo.jpg',
+        content: 'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/whatwedo.jpg?alt=media&token=cb2d21b2-b659-486d-90b2-c6bd8fb526de',
         alt: 'South African township businesses',
         className: 'content-image'
       },
@@ -62,7 +62,7 @@ export const menuContent: Record<string, MenuSection> = {
       },
       {
         type: 'clickable-image',
-        content: '/src/assets/images/LocalsHandgif.gif',
+        content: 'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/LocalsHandgif.gif?alt=media&token=0a001719-272b-4da8-9660-123f8a97fb74',
         alt: 'Locals ZA Store App - Click to visit',
         className: 'store-app-image',
         url: 'https://locals-za.co.za/',
@@ -80,7 +80,7 @@ export const menuContent: Record<string, MenuSection> = {
       },
       {
         type: 'image',
-        content: '/src/assets/images/techeco.png',
+        content: 'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/techeco.png?alt=media&token=b288215a-b707-4e3c-af65-724668329411',
         alt: '75/25 Discount Engine visualization',
         className: 'content-image'
       },
@@ -134,7 +134,7 @@ export const menuContent: Record<string, MenuSection> = {
       },
       {
         type: 'image',
-        content: '/src/assets/images/teamBanner.png',
+        content: 'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/teamBanner.png?alt=media&token=8dd45e55-3107-41cc-90f8-a1ab1a92482e',
         alt: 'Locals ZA team photo',
         className: 'team-image'
       },
@@ -142,7 +142,7 @@ export const menuContent: Record<string, MenuSection> = {
         type: 'team-member-profile',
         content: 'Lehlohonolo Lebea',
         role: 'CEO & Management Lead - Business',
-        profileImage: '/src/assets/images/lebea.jpg',
+        profileImage: 'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/lebea.jpg?alt=media&token=9c1dff47-3ba5-49cc-b4fc-9107defe837d',
         alt: 'Lehlohonolo Lebea profile photo',
         className: 'team-member-profile'
       },
@@ -161,7 +161,7 @@ export const menuContent: Record<string, MenuSection> = {
         type: 'team-member-profile',
         content: 'Martin Maseko',
         role: 'Lead Developer & COO | Founder - Digital',
-        profileImage: '/src/assets/images/martin.jpg',
+        profileImage: 'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/martin.jpg?alt=media&token=86959307-360a-4158-a851-b8870e7c7960',
         alt: 'Martin Maseko profile photo',
         className: 'team-member-profile'
       },
@@ -198,11 +198,27 @@ export const menuContent: Record<string, MenuSection> = {
       },
       {
         type: 'contact-row',
-        content: '068 285 8930',
+        content: 'LocalsZA - 068 285 8930',
         iconUrl: 'https://img.icons8.com/color/48/whatsapp--v1.png',
         contactType: 'whatsapp',
         className: 'contact-whatsapp',
         url: 'https://wa.me/27682858930'
+      },
+      {
+        type: 'contact-row',
+        content: 'Lehlohonolo - 063 191 6693',
+        iconUrl: 'https://img.icons8.com/color/48/whatsapp--v1.png',
+        contactType: 'whatsapp',
+        className: 'contact-whatsapp',
+        url: 'https://wa.me/27631916693'
+      },
+      {
+        type: 'contact-row',
+        content: 'Martin - 062 997 3007',
+        iconUrl: 'https://img.icons8.com/color/48/whatsapp--v1.png',
+        contactType: 'whatsapp',
+        className: 'contact-whatsapp',
+        url: 'https://wa.me/27629973007'
       },
       {
         type: 'contact-row',

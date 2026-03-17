@@ -3,8 +3,6 @@ import Menu from './components/menu/menu.tsx';
 import Overlay from './components/menu/overlay.tsx';
 import MobileContent from './components/menu/mobileContent.tsx';
 import { menuContent } from './components/menu/menuContent.ts';
-import Hand from './assets/images/LocalsHandpng.png';
-import LoadingGif from './assets/images/LocalsHandgif.gif';
 import Navbar from './components/navbar/navbar.tsx';
 import './App.css';
 
@@ -31,7 +29,7 @@ function App() {
   useEffect(() => {
     const loadingTimer = setTimeout(() => {
       setIsLoading(false);
-    }, 2500); // Show loading for 2.5 seconds
+    }, 4500); // Show loading for 4.5 seconds
 
     return () => clearTimeout(loadingTimer);
   }, []);
@@ -80,9 +78,9 @@ function App() {
       {isLoading ? (
         <div className="loading-screen">
           <div className="loading-content">
-            <h2 className="loading-text">Welcome to Locals ZA</h2>
+            <h2 className="loading-text">Welcome to <span className="highlight">Locals ZA</span></h2>
             <img 
-              src={LoadingGif} 
+              src="https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/LocalsHandgif.gif?alt=media&token=0a001719-272b-4da8-9660-123f8a97fb74" 
               alt="Loading..." 
               className="loading-gif"
             />
@@ -112,7 +110,7 @@ function App() {
                   />
                 )}
                 <img
-                  src={Hand}
+                  src="https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/LocalsHandpng.png?alt=media&token=3c4fc46c-fb5f-466b-ab4f-ca81f2e7c9c8"
                   alt="Locals Hand"
                   className='desktop-hand-image'
                   style={{
