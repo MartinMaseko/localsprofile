@@ -18,6 +18,11 @@
   height: auto;
 }
 
+.highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 /* Mobile layout */
 @media (max-width: 991px) {
   .main {
