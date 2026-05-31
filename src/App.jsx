@@ -80,7 +80,7 @@ function App() {
           <div className="loading-content">
             <h2 className="loading-text">Welcome to <span className="highlight">Locals ZA</span></h2>
             <img 
-              src="https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/LocalsHandgif.gif?alt=media&token=0a001719-272b-4da8-9660-123f8a97fb74" 
+              src="https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/LocalsHandgif.gif?alt=media&token=2d49781e-eea5-4b38-a897-1f2a65b52138" 
               alt="Loading..." 
               className="loading-gif"
             />
@@ -110,7 +110,7 @@ function App() {
                   />
                 )}
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/LocalsHandpng.png?alt=media&token=3c4fc46c-fb5f-466b-ab4f-ca81f2e7c9c8"
+                  src="https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/LocalsHandpng.png?alt=media&token=fc37cb73-445b-46d6-8dc3-f65e55fc0b34"
                   alt="Locals Hand"
                   className='desktop-hand-image'
                   style={{

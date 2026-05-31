@@ -26,7 +26,11 @@ export const menuContent: Record<string, MenuSection> = {
     content: [
       {
         type: 'paragraph',
-        content: 'Locals ZA is a specialized e-commerce buyer service and last-mile delivery provider built specifically for the South African township economy. We simplify how micro-enterprises—like spaza shops, hair salons, and fast-food outlets—stock their businesses.'
+        content: 'Locals ZA is an Integrated Route to Market Solutions Provider for the Informal Economy — digitizing the informal mile.'
+      },
+      {
+        type: 'paragraph',
+        content: 'We bridge the gap between large-scale wholesalers and the high-frequency, "small-basket" requirements of micro-enterprises like spaza shops, food outlets, and hair salons, driving digital migration of cash-based micro-retail businesses and professionalizing the Informal Supply Chain through a community-based approach.'
       },
       {
         type: 'image',
@@ -36,19 +40,21 @@ export const menuContent: Record<string, MenuSection> = {
       },
       {
         type: 'heading',
-        content: 'Our Approach',
+        content: 'Who We Serve',
         level: 3
       },
       {
         type: 'paragraph',
-        content: 'By aggregating the buying power of hundreds of local traders, we secure bulk-buy prices that were previously out of reach for individual owners. We don\'t just offer an app; we provide a "feet-to-street" network of dedicated sales agents who offer personal support directly to your doorstep.'
+        content: 'Our customers are mobile-savvy micro-retailers who restock frequently at low to moderate quantities, driven by customer demand — and who need to outsource transport because they have no vehicle and limited capital.'
       },
       {
         type: 'highlight-list',
         content: [
-          'Specialized for SA township economy',
-          'Aggregated buying power for bulk-buy prices',
-          'Feet-to-street sales agent network'
+          'No vehicle — outsource transport for restocking',
+          'Low cash flow — limited stock capacity or start-up capital',
+          'Mobile-savvy — mobile is their primary digital device',
+          'High frequency — small, regular orders at low to moderate quantities',
+          'Just-in-time — restocking driven by customer demand'
         ]
       },
       {
@@ -62,7 +68,7 @@ export const menuContent: Record<string, MenuSection> = {
       },
       {
         type: 'clickable-image',
-        content: 'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/LocalsHandgif.gif?alt=media&token=0a001719-272b-4da8-9660-123f8a97fb74',
+        content: 'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/LocalsHandpng.png?alt=media&token=fc37cb73-445b-46d6-8dc3-f65e55fc0b34',
         alt: 'Locals ZA Store App - Click to visit',
         className: 'store-app-image',
         url: 'https://locals-za.co.za/',
@@ -76,51 +82,53 @@ export const menuContent: Record<string, MenuSection> = {
     content: [
       {
         type: 'paragraph',
-        content: 'Our solution professionalizes the informal supply chain through a powerful, integrated digital ecosystem.'
+        content: 'We offer an integrated B2B delivery ecosystem that requires zero operational changes for your business. Your customers buy from you as normal — at checkout, they choose LocalsZA as their delivery method via our app.'
       },
       {
         type: 'image',
-        content: 'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/techeco.png?alt=media&token=b288215a-b707-4e3c-af65-724668329411',
-        alt: '75/25 Discount Engine visualization',
+        content: 'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/ourSolution.png?alt=media&token=fd8c3621-62ef-45a3-8e7c-a3a7b828f3ab',
+        alt: 'The Locals ZA Ecosystem',
         className: 'content-image'
       },
       {
         type: 'heading',
-        content: 'For Traders',
+        content: 'Seamless In-Store Protocol Compliance',
         level: 2,
         className: 'feature-heading'
       },
       {
         type: 'paragraph',
-        content: 'Our 75/25 Discount Engine automatically calculates procurement savings, giving 75% back to the customer as instant cash back.'
+        content: 'Our verified driver network operates within your designated loading bays and collection rules, checking in using your required order reference numbers.'
       },
       {
         type: 'heading',
-        content: 'For Suppliers',
+        content: 'Zero Disruption Integration',
         level: 2,
         className: 'feature-heading'
       },
       {
         type: 'paragraph',
-        content: 'We provide fully managed API services that handle product catalogs, inventory, and orders in real-time.'
+        content: 'You focus on moving inventory and managing your floors. We handle dispatch, routing, and last-mile delivery.'
       },
       {
         type: 'heading',
-        content: 'The Intelligence',
+        content: 'GMV Growth',
         level: 2,
         className: 'feature-heading'
       },
       {
         type: 'paragraph',
-        content: 'We turn cash-based transactions into digital data points, providing granular insights into township buying habits.'
+        content: 'By removing transport barriers, we unlock high-frequency, smaller-basket orders from micro-enterprises that previously couldn\'t reach you.'
       },
       {
-        type: 'highlight-list',
-        content: [
-          '75/25 Discount Engine with instant cash back',
-          'Fully managed API services for suppliers',
-          'Intelligent driver network for next-day delivery'
-        ]
+        type: 'heading',
+        content: 'Next-Generation API Integration',
+        level: 2,
+        className: 'feature-heading'
+      },
+      {
+        type: 'paragraph',
+        content: 'For wholesale operations looking to streamline digital sales, our platform offers an e-commerce API plug-in — pushing fulfillment requests directly to our network and automating driver dispatch the moment an order is ready for pickup.'
       }
     ]
   },
@@ -160,14 +168,14 @@ export const menuContent: Record<string, MenuSection> = {
       {
         type: 'team-member-profile',
         content: 'Martin Maseko',
-        role: 'Lead Developer & COO | Founder - Digital',
+        role: 'Solutions Architect & COO | Founder - Digital',
         profileImage: 'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/martin.jpg?alt=media&token=86959307-360a-4158-a851-b8870e7c7960',
         alt: 'Martin Maseko profile photo',
         className: 'team-member-profile'
       },
       {
         type: 'paragraph',
-        content: 'Full-Stack developer proficient in ASP.NET, React.js, and API design, Martin directs the technical architecture and digital strategy of the entire Locals ZA ecosystem, ensuring our tech remains robust, scalable, and user-friendly for everyone in the supply chain.'
+        content: 'Solutions Architect & Full-Stack Developer proficient in ASP.NET, React.js, and API design, Martin directs the technical architecture and digital strategy of the entire Locals ZA ecosystem, ensuring our tech remains robust, scalable, and user-friendly for everyone in the supply chain.'
       },
       {
         type: 'contact-row',
