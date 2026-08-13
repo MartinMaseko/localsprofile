@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://locals-za.co.za/sitemap.xml
