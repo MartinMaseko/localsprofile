@@ -19,6 +19,8 @@ export interface HeroContent {
   subtitle: string;
   ctas: CTA[];
   variant?: 'home' | 'page';
+  backgroundImage?: string;
+  backgroundVideo?: string;
   designerNote?: string;
 }
 
@@ -38,6 +40,7 @@ export interface PricingTier {
   price: string;
   storeCount: number;
   bestFor: string;
+  features?: string[];
   highlighted?: boolean;
 }
 

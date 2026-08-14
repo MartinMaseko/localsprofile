@@ -1,39 +1,31 @@
 import type { PageContent } from './types';
+import { SITE_URL } from './site';
 
 export const homeContent: PageContent = {
   seo: {
-    title: 'LocalsZA — Last-Mile Delivery for eKhuruleni',
+    title: 'LocalsZA — Last-Mile Delivery for Ekurhuleni',
     description:
       "LocalsZA is the township's own delivery network in Ekurhuleni. Restock your shop, send a parcel, or move something big — same-day, local, and protected on every load.",
     path: '/',
   },
   hero: {
-    title: 'Move anything, anywhere in the Ekhuruleni.',
+    title: 'Move anything, anywhere in Ekurhuleni.',
     subtitle:
-      "LocalsZA is the township's own delivery network — restock your shop, send a parcel, or move something big, with a local driver, live tracking and protection on every load. Built for Katlehong, Vosloorus, Thokoza and the communities around them.",
+      "LocalsZA is the Ekurhuleni's own delivery network — restock your shop, send a parcel, or move something big, with a local driver, live tracking and protection on every load. Built for Germiston, Alberton, Boksburg, Benoni and the communities around them.",
     variant: 'home',
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/homeBanner.png?alt=media&token=87b0a108-fa59-449b-bf5c-405459e47fb6',
     ctas: [
-      { label: 'Restock my shop', to: '/wholesalers', variant: 'primary' },
-      { label: 'Send a parcel', to: '/send-a-parcel', variant: 'outline' },
-      { label: 'Move something big', to: '/send-a-parcel', variant: 'outline' },
+      { label: 'Restock my shop', href: SITE_URL, variant: 'primary' },
+      { label: 'Send a parcel', href: SITE_URL, variant: 'outline' },
+      { label: 'Move something big', href: SITE_URL, variant: 'outline' },
     ],
   },
   sections: [
     {
       kind: 'trust-strip',
-      heading: 'Serving the East Rand',
-      items: ['Katlehong', 'Vosloorus', 'Thokoza & surrounds'],
-    },
-    {
-      kind: 'blocks',
-      blocks: [
-        { type: 'heading', level: 2, content: 'Township trade runs on hustle. We give it rails.' },
-        {
-          type: 'paragraph',
-          content:
-            "The spaza owner restocking three times a week still hunts for a bakkie on WhatsApp and pays cash with no protection. The person who just bought a couch has no way to get it home. The small brand that wants onto township shelves can't get in the door. LocalsZA connects all of it — one app, one local network, built for this market — so moving stock and sending parcels is as easy as booking a ride.",
-        },
-      ],
+      heading: 'Serving Ekurhuleni',
+      items: ['Germiston','Alberton','Boksburg' , 'Benoni', 'Brakpan', 'Edenvale', 'Kempton Park', 'Nigel', 'Springs'],
     },
     {
       kind: 'feature-cards',
@@ -45,7 +37,7 @@ export const homeContent: PageContent = {
         },
         {
           title: 'Send a parcel — even the big stuff',
-          body: "Same-day, point to point, including furniture and appliances the big apps won't touch.",
+          body: "Same-day, point to point, including furniture and appliances.",
         },
         {
           title: 'Reach the township',
@@ -66,23 +58,13 @@ export const homeContent: PageContent = {
           body: "Once it's in our hands, it's our responsibility — goods-in-transit protection is built in, not sold as an extra.",
         },
         {
-          title: "We're of the township, not just in it.",
+          title: "We're of the Ekurhuleni, not just in it.",
           body: 'Our drivers and reps live and trade where you do. That\'s how work actually gets done here.',
         },
         {
-          title: 'Built for the East Rand.',
-          body: "We're not a national giant stretched thin — we're specialists in one region, and we know it better than anyone.",
+          title: 'Built for the Ekurhuleni.',
+          body: "We're not a national giant — we're specialists in one region, and we know it better than anyone.",
         },
-      ],
-    },
-    {
-      kind: 'closing-cta',
-      heading: "Wherever you sit in the chain, there's a place for you on LocalsZA.",
-      ctas: [
-        { label: 'I want to restock', to: '/wholesalers', variant: 'dark' },
-        { label: 'I want to send something', to: '/send-a-parcel', variant: 'dark' },
-        { label: 'I want to reach the township', to: '/brands', variant: 'primary' },
-        { label: 'I want to drive', to: '/drivers', variant: 'dark' },
       ],
     },
   ],

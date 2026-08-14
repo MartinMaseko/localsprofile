@@ -1,19 +1,22 @@
 import type { PageContent } from './types';
+import { SITE_URL } from './site';
 
 export const sendAParcelContent: PageContent = {
   seo: {
-    title: 'Send a Parcel — Same-Day Courier for the East Rand',
+    title: 'Send a Parcel — Same-Day Courier Ekurhuleni',
     description:
       "We move the big stuff other courier apps refuse — furniture, appliances and bulky loads — same-day, point to point, across the township.",
     path: '/send-a-parcel',
   },
   hero: {
-    eyebrow: 'Send a Parcel / Move Anything',
+    eyebrow: 'Send a Parcel | Courier services',
     title: 'From a small parcel to a fridge — we move it.',
     subtitle:
-      "Need to send something across the township, today? LocalsZA collects and delivers same-day, point to point — and unlike the big delivery apps, we handle the big stuff too: furniture, appliances, multi-box loads, building supplies.",
+      "Need to send something across Ekurhuleni, today? LocalsZA collects and delivers same-day, point to point , we handle the big stuff too: furniture, appliances, multi-box loads, building supplies.",
     variant: 'page',
-    ctas: [{ label: 'Get a parcel quote', href: 'https://wa.me/27682858930', variant: 'primary' }],
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/sendParcel.png?alt=media&token=f4ad5497-9b2f-4ab3-ab49-2f236a53fe44',
+    ctas: [{ label: 'Get a parcel quote', href: `${SITE_URL}/calculator`, variant: 'primary' }],
   },
   sections: [
     {
@@ -55,11 +58,6 @@ export const sendAParcelContent: PageContent = {
           body: 'Deep into the townships, reliably.',
         },
       ],
-    },
-    {
-      kind: 'closing-cta',
-      heading: 'Ready to send something today?',
-      ctas: [{ label: 'Get a parcel quote', href: 'https://wa.me/27682858930', variant: 'primary' }],
     },
   ],
 };

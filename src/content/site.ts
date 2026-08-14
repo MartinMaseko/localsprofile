@@ -17,7 +17,7 @@ export const navItems: NavItem[] = [
   { label: 'About', to: '/about' },
 ];
 
-export const getStartedCTA = { label: 'Go to App', to: SITE_URL };
+export const getStartedCTA = { label: 'Go to App', href: SITE_URL };
 
 export interface FooterLink {
   label: string;

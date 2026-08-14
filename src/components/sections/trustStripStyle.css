@@ -17,19 +17,38 @@
   font-size: 0.9rem;
 }
 
-.trust-strip-items {
+.trust-strip-viewport {
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent 0, #000 4rem, #000 calc(100% - 4rem), transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 4rem, #000 calc(100% - 4rem), transparent 100%);
+}
+
+.trust-strip-track {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
+  width: max-content;
+  gap: 2rem;
+  animation: trust-strip-scroll 26s linear infinite;
 }
 
 .trust-strip-item {
   font-family: var(--mono);
   font-size: 0.8rem;
   color: var(--accent);
-  background: var(--accent-bg);
-  border: 1px solid var(--accent-border);
-  border-radius: 999px;
-  padding: 0.4rem 0.9rem;
+  white-space: nowrap;
+}
+
+@keyframes trust-strip-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trust-strip-track {
+    animation: none;
+  }
 }

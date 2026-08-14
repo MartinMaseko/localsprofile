@@ -22,7 +22,14 @@ const PricingCards = ({ heading, subheading, tiers, note }: PricingCardsProps) =
               <div className="pricing-card-price">{tier.price}</div>
               <div className="pricing-card-stores">{tier.storeCount} stores</div>
               <p className="pricing-card-best-for">{tier.bestFor}</p>
-              <Button label="Book a brand call" href="https://wa.me/27682858930" variant={tier.highlighted ? 'primary' : 'outline'} />
+              {tier.features && tier.features.length > 0 && (
+                <ul className="pricing-card-features">
+                  {tier.features.map((feature) => (
+                    <li key={feature}>{feature}</li>
+                  ))}
+                </ul>
+              )}
+              <Button label="Book a brand call" href="mailto:martin@localsza.co.za" variant={tier.highlighted ? 'primary' : 'outline'} />
             </div>
           ))}
         </div>

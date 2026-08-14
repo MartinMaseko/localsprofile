@@ -1,4 +1,5 @@
 import type { PageContent } from './types';
+import { SITE_URL } from './site';
 
 export const aboutContent: PageContent = {
   seo: {
@@ -57,7 +58,7 @@ export const aboutContent: PageContent = {
       kind: 'closing-cta',
       heading: 'What we believe',
       body: "Township trade doesn't need saving — it needs infrastructure, and it deserves to be treated as the R900-billion economy it already is.",
-      ctas: [{ label: 'Get in touch', href: 'https://wa.me/27682858930', variant: 'primary' }],
+      ctas: [{ label: 'Get in touch', href: SITE_URL, variant: 'primary' }],
     },
   ],
 };

@@ -7,8 +7,25 @@ interface HeroProps {
 }
 
 const Hero = ({ hero }: HeroProps) => {
+  const hasVideo = Boolean(hero.backgroundVideo);
+  const hasImage = Boolean(hero.backgroundImage) && !hasVideo;
+  const hasMedia = hasVideo || hasImage;
+
   return (
-    <section className={`hero hero-${hero.variant ?? 'page'}`}>
+    <section
+      className={`hero hero-${hero.variant ?? 'page'}${hasMedia ? ' hero-has-media' : ''}`}
+      style={hasImage ? { backgroundImage: `url(${hero.backgroundImage})` } : undefined}
+    >
+      {hasVideo && (
+        <video
+          className="hero-bg-video"
+          src={hero.backgroundVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+      )}
       <div className="page-container hero-container">
         {hero.eyebrow && <span className="hero-eyebrow">{hero.eyebrow}</span>}
         <h1 className="hero-title">{hero.title}</h1>

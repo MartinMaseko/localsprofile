@@ -1,21 +1,22 @@
 import type { PageContent } from './types';
+import { SITE_URL } from './site';
 
 export const driversContent: PageContent = {
   seo: {
     title: 'Drive for LocalsZA — Keep 100% of Your Fare',
     description:
-      'Join LocalsZA as a driver or courier partner in the East Rand. Keep 100% of your fare, get steady protected jobs, and choose your own hours.',
+      'Join LocalsZA as a driver or courier partner in Ekurhuleni. Keep 100% of your fare, get steady protected jobs, and choose your own hours.',
     path: '/drivers',
   },
   hero: {
     eyebrow: 'For Drivers & Courier Partners',
     title: 'Keep 100% of your fare. Get the jobs. Get protected.',
     subtitle:
-      "Whether you own one bakkie or run a small courier operation, LocalsZA brings you steady, protected delivery work across the East Rand — without taking a cut of your fare. We're not your boss; we're your job feed.",
+      "Whether you own one bakkie or run a small courier operation, LocalsZA brings you steady, protected delivery work across Ekurhuleni — without taking a cut of your fare. We're not your boss; we're your job feed.",
     variant: 'page',
     ctas: [
-      { label: 'Apply to drive', href: 'https://wa.me/27682858930', variant: 'primary' },
-      { label: 'Partner your courier business', href: 'https://wa.me/27682858930', variant: 'dark' },
+      { label: 'Apply to drive', href: `${SITE_URL}/driver-register`, variant: 'primary' },
+      { label: 'Partner your courier business', href: 'mailto:martin@localsza.co.za', variant: 'dark' },
     ],
   },
   sections: [
@@ -62,8 +63,8 @@ export const driversContent: PageContent = {
       kind: 'closing-cta',
       heading: 'Ready to start earning on your own terms?',
       ctas: [
-        { label: 'Apply to drive', href: 'https://wa.me/27682858930', variant: 'primary' },
-        { label: 'Partner your courier business', href: 'https://wa.me/27682858930', variant: 'dark' },
+        { label: 'Apply to drive', href: `${SITE_URL}/driver-register`, variant: 'primary' },
+        { label: 'Partner your courier business', href: 'mailto:martin@localsza.co.za', variant: 'dark' },
       ],
     },
   ],

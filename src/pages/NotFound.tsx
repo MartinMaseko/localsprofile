@@ -1,5 +1,6 @@
 import SEO from '../components/seo/SEO';
 import Button from '../components/common/Button';
+import { SITE_URL } from '../content/site';
 import './notFoundStyle.css';
 
 const NotFound = () => {
@@ -13,7 +14,7 @@ const NotFound = () => {
       <section className="not-found page-container">
         <h1 className="not-found-title">This street doesn't exist.</h1>
         <p className="not-found-body">The page you're looking for has moved or never existed. Let's get you back on route.</p>
-        <Button label="Back to Home" to="/" variant="primary" />
+        <Button label="Back to Home" href={SITE_URL} variant="primary" />
       </section>
     </>
   );

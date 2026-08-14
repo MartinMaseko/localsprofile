@@ -1,4 +1,5 @@
 import type { PageContent } from './types';
+import { SITE_URL } from './site';
 
 export const platformApiContent: PageContent = {
   seo: {
@@ -13,9 +14,10 @@ export const platformApiContent: PageContent = {
     subtitle:
       'Sell online or run an ordering system? Show live LocalsZA delivery rates at checkout on Shopify, WooCommerce and Bob-Go, or plug straight into your own site with our Partner API.',
     variant: 'page',
+    backgroundVideo:
+      'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/API.mp4?alt=media&token=dcb730a5-0b19-4032-8035-6a605f1b47c9',
     ctas: [
-      { label: 'Read the integration guide', href: 'https://wa.me/27682858930', variant: 'primary' },
-      { label: 'Request API access', href: 'https://wa.me/27682858930', variant: 'dark' },
+      { label: 'Request API access', href: SITE_URL, variant: 'dark' },
     ],
   },
   sections: [
@@ -39,7 +41,7 @@ export const platformApiContent: PageContent = {
     {
       kind: 'closing-cta',
       heading: 'Slot LocalsZA delivery into your business, not the other way around.',
-      ctas: [{ label: 'Request API access', href: 'https://wa.me/27682858930', variant: 'primary' }],
+      ctas: [{ label: 'Request API access', href: SITE_URL, variant: 'primary' }],
     },
   ],
 };
