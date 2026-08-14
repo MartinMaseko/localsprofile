@@ -1,0 +1,63 @@
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.team-member-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.team-member-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  font-family: var(--heading);
+  font-size: 1.2rem;
+}
+
+.team-member-name {
+  font-family: var(--heading);
+  color: var(--text-h);
+  font-size: 1.1rem;
+  margin: 0 0 0.25rem;
+}
+
+.team-member-role {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 0.85rem;
+}
+
+.team-member-bio {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 0.85rem;
+}
+
+.team-member-email {
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-border);
+}
+
+.team-member-email:hover {
+  color: var(--accent);
+}

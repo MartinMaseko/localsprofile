@@ -1,0 +1,23 @@
+.main {
+  flex: 1 0 auto;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.page-section {
+  padding: 3rem 0;
+}
+
+.section-heading {
+  font-family: var(--heading);
+  color: var(--text-h);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}

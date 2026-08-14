@@ -1,0 +1,103 @@
+.pricing-subheading {
+  color: var(--text-secondary);
+  max-width: 65ch;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+}
+
+.pricing-card .btn {
+  margin-top: auto;
+}
+
+.pricing-card-highlighted {
+  border-color: var(--accent);
+  box-shadow: var(--glass-shadow-intense);
+}
+
+.pricing-card-name {
+  font-family: var(--heading);
+  color: var(--text-h);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.pricing-card-price {
+  font-family: var(--heading);
+  color: var(--accent);
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+
+.pricing-card-stores {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-family: var(--mono);
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card-best-for {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  min-height: 2.5em;
+  margin-bottom: 0.75rem;
+}
+
+.pricing-card-features {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pricing-card-features li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.pricing-card-features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.pricing-note {
+  margin-top: 1.5rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
