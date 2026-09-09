@@ -15,10 +15,8 @@ const WhyUsPoints = ({ heading, points }: WhyUsPointsProps) => {
           {points.map((point) => (
             <li key={point.title} className="why-us-item">
               <span className="why-us-check">✓</span>
-              <span>
-                <strong className="why-us-title">{point.title}</strong>{' '}
-                <span className="why-us-body">{point.body}</span>
-              </span>
+              <strong className="why-us-title">{point.title}</strong>
+              <span className="why-us-body">{point.body}</span>
             </li>
           ))}
         </ul>
