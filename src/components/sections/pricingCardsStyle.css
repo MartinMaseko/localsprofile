@@ -48,8 +48,10 @@
 .pricing-card-price {
   font-family: var(--heading);
   color: var(--accent);
-  font-size: 1.3rem;
-  white-space: nowrap;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  text-align: center;
+  overflow-wrap: break-word;
 }
 
 .pricing-card-stores {

@@ -2,16 +2,16 @@ import type { PageContent } from './types';
 
 export const brandsContent: PageContent = {
   seo: {
-    title: 'Township Brand Activation — Starting from R2,900',
+    title: 'Township Brand Activation — Monthly Campaigns from R22,500',
     description:
-      'Get your brand into township shops from R2,900. Community reps place your product in real stores, with photo proof, GPS check-ins and a campaign report.',
+      'Put your brand physically on township shelves. Community reps place your product in real stores, with photo + GPS proof from every visit and a velocity, repeat-rate and zone-resonance report every cycle.',
     path: '/brands',
   },
   hero: {
-    eyebrow: 'For Brands — Township Sales Promotion',
-    title: 'Get your brand into township shops — from R2,900.',
+    eyebrow: 'For Brands — Product Activation in the Informal Market',
+    title: 'Get your brand into the informal market from R22 500',
     subtitle:
-      "",
+      "Start small, prove your product moves, and scale as you grow.",
     variant: 'page',
     backgroundImage:
       'https://firebasestorage.googleapis.com/v0/b/localsite-1f8f6.firebasestorage.app/o/Brand%20Activations.png?alt=media&token=59aac20d-bf64-41be-875a-0281ee3f2b90',
@@ -23,81 +23,150 @@ export const brandsContent: PageContent = {
     {
       kind: 'blocks',
       blocks: [
-        { type: 'heading', level: 2, content: 'Built for emerging brands' },
+        { type: 'heading', level: 2, content: 'Get your brand onto township shelves' },
         {
           type: 'paragraph',
           content:
-            "The township economy is worth an estimated R900 billion, and informal retail moves close to a third of South Africa's FMCG. But most Brand owners can't effectively access the fragmented informal retail market — so your product either isn't on the shelf or isn't top of mind. LocalsZA is the way in: our community reps put your brand physically inside stores that owners already trust, at a price a growing brand can actually afford.",
+            "The township market is enormous, but most spaza and retail owners can't buy directly from big brands at the scale required — they rely on wholesalers and micro-bulk resellers to access products. So your product either isn't on the shelf, or isn't top of mind. LocalsZA is the way in. Our main service is demand generation and driving engagement: our community reps place your brand physically inside real township stores, brief the owners, drive word-of-mouth and poster placements, and send you photo-verified proof from every shop. You don't need an agency budget to test the township market — you start small, prove your product moves, and scale as you grow.",
         },
       ],
     },
     {
       kind: 'blocks',
       blocks: [
-        { type: 'heading', level: 2, content: 'Every activation includes' },
+        { type: 'heading', level: 2, content: 'What every activation delivers' },
         {
           type: 'highlight-list',
           content: [
-            'Local reps placing your brand inside real township stores',
-            'Point-of-sale material, shelf presence and owner word-of-mouth',
-            'Photo proof and GPS check-in from every store',
-            'A simple campaign report you can show your investors',
-            'Optional: pair with LocalsZA delivery so your stock reaches the shelf',
+            'Real shelf presence inside stores owners already trust',
+            'Community reps who live and trade in the same streets',
+            'Point-of-sale material placed in-store, plus owner briefing and word-of-mouth push',
+            "A route into stores that can't buy direct from big brands — shelves you otherwise can't reach",
+            'Photo proof and GPS check-in from every single store — you see exactly where your money went',
+            'An investor-ready report after every cycle — proof you can show management or funders',
+            'Hyper-local targeting — the right stores, in the right zones, on the right days',
+            'Scales with you — step up as your product proves itself; we grow the footprint as you grow',
+            'Recurring presence — monthly cycles keep you top-of-mind, not a once-off drop that fades',
+            'Optional delivery pairing — bundle LocalsZA delivery so your stock actually reaches the shelf',
           ],
         },
       ],
     },
     {
       kind: 'pricing',
-      heading: 'Packages',
+      heading: 'Monthly activation, priced for momentum',
       tiers: [
-        { name: 'Starter', price: 'R2,900', storeCount: 15, bestFor: 'First market test' },
         {
           name: 'Launch',
-          price: 'R4,900/mo',
-          storeCount: 25,
-          bestFor: 'A first market test',
+          price: 'R22,500/mo',
+          storeCount: 50,
+          bestFor: 'A first real campaign, single zone',
           features: [
-            '25 store activations monthly',
-            'POS placement + owner brief',
-            'Photo proof & GPS from every store',
-            'Monthly campaign report',
-            'Single East Rand zone',
+            '50 stores · single zone',
+            'Fortnightly detailed visits',
+            'Full 6-section dashboard',
+            'Weekly & monthly reports',
+            'Photo + GPS proof',
+            'Objection tracking',
           ],
         },
         {
-          name: 'Momentum',
-          price: 'R8,900/mo',
-          storeCount: 50,
-          bestFor: 'Building real traction',
+          name: 'Growth',
+          price: 'R44,000/mo',
+          storeCount: 100,
+          bestFor: 'Multi-suburb reach',
           features: [
-            '50 store activations monthly',
-            'Everything in Launch, plus:',
+            '100 stores · multi-suburb',
+            'Everything in Launch',
+            'Zone resonance mapping',
             'Priority rep scheduling',
-            'Zone coverage map in report',
             'Multi-suburb reach',
           ],
+          highlighted: true,
         },
         {
-          name: 'Saturation',
-          price: 'R14,900/mo',
-          storeCount: 100,
-          bestFor: 'Owning a zone',
+          name: 'Scale',
+          price: 'R105,000/mo',
+          storeCount: 250,
+          bestFor: 'Owning multiple zones',
           features: [
-            '100 store activations monthly',
-            'Everything in Momentum, plus:',
-            'Full-zone saturation strategy',
-            'Visit-over-visit tracking',
-            'Priority delivery-bundle rates',
+            '250 stores · multi-zone',
+            'Everything in Growth',
+            'Dedicated analyst',
+            'Monthly strategy call',
+            'Last-mile restock built in',
+          ],
+        },
+        {
+          name: 'Dominate',
+          price: 'From R200,000/mo',
+          storeCount: 500,
+          bestFor: 'Best for owning a zone',
+          features: [
+            '500 stores/month',
+            'Everything in Scale',
+            'Custom KPIs',
+            'Priority last-mile',
+            'Quarterly exec review',
           ],
         },
       ],
-      note: 'Established FMCG brand wanting dedicated reps at every store and a bespoke dashboard? Enterprise campaigns by quotation.',
+      note: 'Established FMCG brand? For dedicated reps at every store, custom zones and a bespoke live dashboard, we build enterprise campaigns by quotation — talk to us about a footprint that matches your national ambitions in the East Rand.',
+    },
+    {
+      kind: 'blocks',
+      blocks: [
+        { type: 'heading', level: 2, content: 'Every rand accounted for, with proof, not promises' },
+        {
+          type: 'paragraph',
+          content:
+            'There is no Nielsen for the township and informal market. Brands are flying blind in the market that matters most — we turn that blind spot into your dashboard.',
+        },
+      ],
+    },
+    {
+      kind: 'why-us',
+      points: [
+        {
+          title: 'Velocity',
+          body: 'How fast it sells, per store per week — trended and benchmarked.',
+        },
+        {
+          title: 'Consumer pull',
+          body: 'Where customers ask for your brand by name.',
+        },
+        {
+          title: 'Repeat rate',
+          body: 'Do stores reorder? The truest signal of product-market fit.',
+        },
+        {
+          title: 'Zone resonance',
+          body: 'A heatmap of where your brand wins, by zone and outlet.',
+        },
+      ],
+    },
+    {
+      kind: 'blocks',
+      blocks: [
+        {
+          type: 'paragraph',
+          content:
+            'Proof, not promises. Every activation carries a photo, a GPS pin and a timestamp from every single store. Every cycle produces an investor- and buyer-ready report you can put in front of management, a retailer, or a funder. You see exactly where your money went — store by store, rand by rand.',
+        },
+      ],
     },
     {
       kind: 'closing-cta',
       heading: 'Ready to get your brand onto East Rand shelves?',
-      ctas: [{ label: 'Book a brand call', href: 'mailto:martin@localsza.co.za', variant: 'primary' }],
+      body: 'Want to see it before you commit? Ask us for live demo access to a real brand dashboard and rep app.',
+      ctas: [
+        { label: 'Book a brand call', href: 'mailto:martin@localsza.co.za', variant: 'primary' },
+        {
+          label: 'Request live demo access',
+          href: 'mailto:martin@localsza.co.za?subject=Live%20demo%20access%20request',
+          variant: 'outline',
+        },
+      ],
     },
   ],
 };
