@@ -42,14 +42,14 @@ export const aboutContent: PageContent = {
       members: [
         {
           name: 'Lehlohonolo Lebea',
-          role: 'CEO & Head of Sales',
-          bio: 'B.Com in Marketing & Business Management. Leads sales, the community rep network, partner relationships and campaign performance.',
+          role: 'CEO & Business Analyst | Sales Director',
+          bio: 'B.Com in Marketing & Business Management and Microsoft Certified Business Analyst. Leads sales, the community rep network, partner relationships and campaign performance.',
           email: 'lehlohonolo@locals-za.co.za',
         },
         {
           name: 'Martin Maseko',
-          role: 'COO & Lead Developer',
-          bio: 'Full-stack developer and Azure data engineer. Architects and runs the LocalsZA technology ecosystem, from the delivery platform to the analytics that keep it accountable.',
+          role: 'Founder & COO - Software & Data Engineer',
+          bio: 'Full-Stack developer and Azure data engineer. Architects and runs the LocalsZA technology ecosystem, from the delivery platform to the analytics that keep it accountable.',
           email: 'martin@locals-za.co.za',
         },
       ],
